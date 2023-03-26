@@ -1,8 +1,11 @@
 import './styles/App.css';
+import TitleBar from "./components/TitleBar";
 
 const App = () => {
   return (
-      <div></div>
+      <div>
+        <TitleBar />
+      </div>
   );
 };
 

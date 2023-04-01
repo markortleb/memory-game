@@ -1,0 +1,12 @@
+.Footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #383c4b;
+    padding: 1em;
+}
+
+.Footer span{
+    font-family: Arial;
+    color: azure;
+}

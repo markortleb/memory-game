@@ -1,9 +1,10 @@
 
 .CardsArea {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
+    justify-content: center;
     gap: 1em;
 }
 
@@ -15,6 +16,10 @@
     height: 15em;
     width: 15em;
     background: darkgray;
+}
+
+.CardsArea li:hover {
+    background-color: yellow;
 }
 
 .CardsArea img {

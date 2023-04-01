@@ -10,7 +10,7 @@ const App = () => {
 
 
     return (
-        <div>
+        <div className="App">
             <TitleBar />
             <GameArea score={score} cards={cards}/>
         </div>

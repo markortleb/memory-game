@@ -1,0 +1,14 @@
+.TitleBar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    background-color: mediumspringgreen;
+}
+
+.TitleBar h1 {
+    font-size: 2.4em;
+    font-family: "Droid Sans"
+}

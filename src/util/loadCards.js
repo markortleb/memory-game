@@ -6,9 +6,16 @@ export default function loadCards () {
         return r.keys().map(r);
     }
 
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+
     const images = _importAll(require.context('../img', false, /\.(png|jpe?g|svg|webp|jpg)$/));
 
-    return images.map(item => {
+    let cards = images.map(item => {
         return {
             id: uniqid(),
             image: item,
@@ -16,5 +23,11 @@ export default function loadCards () {
             wasClicked: false
         }
     });
+
+    shuffleArray(cards);
+
+    return cards;
+
+
 
 }

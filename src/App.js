@@ -6,14 +6,13 @@ import {useState} from "react";
 import loadCards from "./util/loadCards";
 
 const App = () => {
-    const [score, setScore] = useState(0);
     const [cards, setCards] = useState(loadCards());
 
 
     return (
         <div className="App">
             <TitleBar />
-            <GameArea score={score} cards={cards}/>
+            <GameArea cards={cards}/>
             <Footer />
         </div>
     );

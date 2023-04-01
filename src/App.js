@@ -1,14 +1,20 @@
 import './styles/App.css';
 import TitleBar from "./components/TitleBar";
 import GameArea from "./components/GameArea";
+import {useState} from "react";
+import loadCards from "./util/loadCards";
 
 const App = () => {
-  return (
-      <div>
-        <TitleBar />
-        <GameArea />
-      </div>
-  );
+    const [score, setScore] = useState(0);
+    const [cards, setCards] = useState(loadCards());
+
+
+    return (
+        <div>
+            <TitleBar />
+            <GameArea score={score} cards={cards}/>
+        </div>
+    );
 };
 
 export default App;

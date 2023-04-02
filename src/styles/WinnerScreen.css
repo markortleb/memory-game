@@ -1,0 +1,20 @@
+.WinnerScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 2em;
+}
+
+.WinnerScreen span {
+    font-size: 2.5em;
+    color: navy;
+}
+
+.WinnerScreen button {
+    padding: 1em;
+    background-color: aqua;
+    border: 1px solid black;
+    border-radius: 15px;
+}

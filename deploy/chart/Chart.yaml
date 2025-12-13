@@ -1,0 +1,4 @@
+apiVersion: v2
+name: memory-game
+description: A Helm chart for deploying the Memory Game app.
+version: 0.1.0
